@@ -340,7 +340,7 @@ var CONTEXT_KEY = '__styled-components-stylesheet__';
 
 var IS_BROWSER = typeof window !== 'undefined' && 'HTMLElement' in window;
 
-var DISABLE_SPEEDY = typeof false === 'boolean' && false || process.env.FORCE_DISABLE_SPEEDY || process.env.NODE_ENV !== 'production';
+var DISABLE_SPEEDY = typeof false === 'boolean' && false || process.env.FORCE_DISABLE_SPEEDY === 'true' || process.env.NODE_ENV !== 'production';
 
 // 
 var SC_COMPONENT_ID = /^[^\S\n]*?\/\* sc-component-id:\s*(\S+)\s+\*\//gm;
