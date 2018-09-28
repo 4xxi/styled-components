@@ -36,8 +36,6 @@
     "prepublishOnly": "run-s build",
     "lint-staged": "lint-staged",
     "dev": "cross-env BABEL_ENV=cjs babel-node example/startServer.js",
-    "prepare": "npm install",
-    "install": "run-s build",
     "postinstall": "node ./scripts/postinstall.js || exit 0"
   },
   "repository": {

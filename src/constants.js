@@ -1,7 +1,5 @@
 // @flow
 
-declare var __DEV__: ?string
-
 export const SC_ATTR =
   (typeof process !== 'undefined' && process.env.SC_ATTR) ||
   'data-styled-components'
@@ -11,7 +9,4 @@ export const CONTEXT_KEY = '__styled-components-stylesheet__'
 export const IS_BROWSER =
   typeof window !== 'undefined' && 'HTMLElement' in window
 
-export const DISABLE_SPEEDY =
-  (typeof __DEV__ === 'boolean' && __DEV__) ||
-  process.env.FORCE_DISABLE_SPEEDY === 'true' ||
-  process.env.NODE_ENV !== 'production'
+export const DISABLE_SPEEDY = true
